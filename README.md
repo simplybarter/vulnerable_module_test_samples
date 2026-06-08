@@ -83,6 +83,7 @@ The repository is organized under `fixtures/`, first by language, then by packag
     |   |-- pdm/
     |   |-- pip/
     |   |-- pipenv/
+    |   |-- pyproject/
     |   |-- poetry/
     |   `-- uv/
     |-- ruby/
@@ -144,7 +145,7 @@ The current fixture coverage under `fixtures/` is:
 | Java | `gradle`, `gradle-lockfile`, `ivy`, `maven`, `maven-repo` | `build.gradle`, `gradle.lockfile`, `ivy.xml`, `pom.xml`, vendored Maven-repository `*.pom` metadata |
 | Node.js | `bun`, `deno`, `node-modules`, `npm`, `npm-shrinkwrap`, `pnpm`, `yarn-berry`, `yarn` | `bun.lock`, `deno.lock`, checked-in `node_modules/**/package.json` metadata, `package-lock.json`, `npm-shrinkwrap.json`, `pnpm-lock.yaml`, Yarn Berry `package.json` + `.yarnrc.yml` + `yarn.lock`, Yarn Classic `package.json` + `yarn.lock` |
 | PHP | `composer`, `composer-custom-vendor`, `composer-vendor` | `composer.json`, `composer.lock`, vendored Composer metadata in default and custom vendor directories |
-| Python | `conda_lock`, `dist-info`, `pdm`, `pip`, `pipenv`, `poetry`, `uv` | `conda-lock.yml`, checked-in `site-packages/*.dist-info/METADATA`, `pdm.lock`, `requirements.txt`, `Pipfile`, `Pipfile.lock`, `poetry.lock`, `uv.lock` |
+| Python | `conda_lock`, `dist-info`, `pdm`, `pip`, `pipenv`, `pyproject`, `poetry`, `uv` | `conda-lock.yml`, checked-in `site-packages/*.dist-info/METADATA`, `pdm.lock`, `requirements.txt`, `Pipfile`, `Pipfile.lock`, `pyproject.toml`, `poetry.lock`, `uv.lock` |
 | Ruby | `bundle-vendor`, `bundler`, `gemfile` | `Gemfile`, `Gemfile.lock`, vendored gem specifications |
 | Rust | `cargo`, `cargo-lock`, `cargo-vendor` | `Cargo.toml`, `Cargo.lock`, vendored Cargo package metadata |
 | Zig | `zig`, `zig-pkg` | `build.zig.zon`, fetched package metadata under `zig-pkg/` |

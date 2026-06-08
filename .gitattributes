@@ -80,6 +80,7 @@
 /fixtures/python/pip/requirements.txt linguist-language=Python package-manager=pip supported-language=python
 /fixtures/python/pipenv/Pipfile linguist-language=TOML package-manager=pipenv supported-language=python
 /fixtures/python/pipenv/Pipfile.lock linguist-language=JSON package-manager=pipenv supported-language=python
+/fixtures/python/pyproject/pyproject.toml linguist-language=TOML package-manager=pyproject supported-language=python
 /fixtures/python/poetry/poetry.lock linguist-language=Python package-manager=poetry supported-language=python
 /fixtures/python/uv/uv.lock linguist-language=Python package-manager=uv supported-language=python
 

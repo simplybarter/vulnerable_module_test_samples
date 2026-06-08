@@ -1,0 +1,14 @@
+[
+  {
+    "name": "urllib3",
+    "version": "1.26.16",
+    "eco": "PyPI",
+    "type": "manifest"
+  },
+  {
+    "name": "jinja2",
+    "version": "2.11.2",
+    "eco": "PyPI",
+    "type": "manifest"
+  }
+]

@@ -1,0 +1,7 @@
+[project]
+name = "fixture-pyproject"
+version = "0.1.0"
+dependencies = [
+  "urllib3==1.26.16",
+  "jinja2==2.11.2",
+]
