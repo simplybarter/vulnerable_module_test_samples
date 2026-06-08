@@ -17,6 +17,8 @@
 /fixtures/rust/cargo-vendor/vendor/** linguist-vendored=true
 
 # C#
+/fixtures/csharp/central-packages/Directory.Packages.props linguist-language=XML package-manager=nuget-central-management supported-language=csharp
+/fixtures/csharp/central-packages/src/App/*.csproj linguist-language=C# package-manager=nuget-central-management supported-language=csharp
 /fixtures/csharp/legacy/packages.config linguist-language=C# package-manager=packages.config supported-language=csharp
 /fixtures/csharp/lockfile/*.csproj linguist-language=C# package-manager=nuget-lockfile supported-language=csharp
 /fixtures/csharp/lockfile/packages.lock.json linguist-language=JSON package-manager=nuget-lockfile supported-language=csharp
