@@ -8,6 +8,7 @@
 # Vendored dependency trees
 /fixtures/csharp/packages-folder/packages/** linguist-vendored=true
 /fixtures/go/vendor/vendor/** linguist-vendored=true
+/fixtures/java/maven-repo/repository/** linguist-vendored=true
 /fixtures/node/node-modules/node_modules/** linguist-vendored=true
 /fixtures/php/composer-custom-vendor/deps/** linguist-vendored=true
 /fixtures/php/composer-vendor/vendor/** linguist-vendored=true
@@ -34,6 +35,8 @@
 /fixtures/java/gradle/*.gradle linguist-language=Java package-manager=gradle supported-language=java
 /fixtures/java/gradle-lockfile/*.gradle linguist-language=Java package-manager=gradle-lockfile supported-language=java
 /fixtures/java/gradle-lockfile/gradle.lockfile package-manager=gradle-lockfile supported-language=java
+/fixtures/java/maven-repo/pom.xml linguist-language=XML package-manager=maven-repo supported-language=java
+/fixtures/java/maven-repo/repository/**/*.pom linguist-language=XML package-manager=maven-repo supported-language=java
 /fixtures/java/maven/pom.xml linguist-language=Java package-manager=maven supported-language=java
 
 # Node.js

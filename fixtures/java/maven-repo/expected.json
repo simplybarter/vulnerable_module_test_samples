@@ -1,0 +1,20 @@
+[
+  {
+    "name": "org.apache.logging.log4j:log4j-core",
+    "version": "2.14.1",
+    "eco": "Maven",
+    "type": "manifest"
+  },
+  {
+    "name": "org.apache.logging.log4j:log4j-core",
+    "version": "2.14.1",
+    "eco": "Maven",
+    "type": "installed"
+  },
+  {
+    "name": "org.apache.logging.log4j:log4j-api",
+    "version": "2.14.1",
+    "eco": "Maven",
+    "type": "installed"
+  }
+]
