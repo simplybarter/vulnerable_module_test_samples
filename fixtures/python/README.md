@@ -1,11 +1,12 @@
 # Python Fixtures
 
-This directory contains Python dependency fixtures across several package managers and lockfile formats.
+This directory contains Python dependency fixtures across manifest, lockfile, and installed metadata formats.
 
 ## Included Fixtures
 
 | Fixture | Files Under Test | What It Exercises |
 | --- | --- | --- |
+| `dist-info/` | `requirements.txt`, `site-packages/*.dist-info/METADATA` | checked-in installed package metadata parsing from Python `.dist-info` directories |
 | `pip/` | `requirements.txt` | plain requirements parsing with exact pins, range constraints, comments, and inline comments |
 | `pipenv/` | `Pipfile`, `Pipfile.lock` | Pipenv manifest and lockfile parsing across `default` and `develop` dependency sections |
 | `poetry/` | `poetry.lock` | Poetry lockfile parsing |
@@ -15,6 +16,10 @@ This directory contains Python dependency fixtures across several package manage
 
 ## Expected Detection Behavior
 
+- `dist-info/` mixes types and expects:
+  - `manifest`: `requests` `2.31.0`
+  - `installed`: `requests` `2.31.0`
+  - `installed`: `urllib3` `1.26.16`
 - `pip/` uses `type: "manifest"` and expects:
   - `requests` `2.31.0`
   - `flask` `3.0.0`
@@ -36,6 +41,8 @@ The expected ecosystem label is `PyPI` across all current fixtures.
 
 ## Notes
 
+- `dist-info/` uses the standardized `.dist-info` directory structure under a checked-in `site-packages/` tree so scanners can validate installed-package discovery from Python installation metadata.
+- `dist-info/` intentionally keeps `requests` `2.31.0` as both a declared and installed package while adding installed-only `urllib3` `1.26.16`, which is a historically vulnerable transitive package version.
 - `pip/` is intentionally useful for scanners that need to ignore comments while still extracting normalized package names and versions from mixed requirement syntax.
 - `pipenv/` uses an exact-pinned `Pipfile` and a checked-in `Pipfile.lock`, which exercises both top-level declarations and fully resolved locked versions for the same project.
 - `pipenv/` intentionally places `urllib3` `2.0.5` in the runtime dependency set and `pytest` `7.4.0` in the development dependency set so scanners must inspect both `default` and `develop` sections of `Pipfile.lock`.

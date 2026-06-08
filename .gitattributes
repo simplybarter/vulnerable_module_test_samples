@@ -11,6 +11,7 @@
 /fixtures/node/node-modules/node_modules/** linguist-vendored=true
 /fixtures/php/composer-custom-vendor/deps/** linguist-vendored=true
 /fixtures/php/composer-vendor/vendor/** linguist-vendored=true
+/fixtures/python/dist-info/site-packages/** linguist-vendored=true
 /fixtures/ruby/bundle-vendor/vendor/** linguist-vendored=true
 /fixtures/rust/cargo-vendor/vendor/** linguist-vendored=true
 
@@ -59,6 +60,8 @@
 
 # Python
 /fixtures/python/conda_lock/conda-lock.yml linguist-language=Python package-manager=conda-lock supported-language=python
+/fixtures/python/dist-info/requirements.txt linguist-language=Python package-manager=dist-info supported-language=python
+/fixtures/python/dist-info/site-packages/**/*.dist-info/METADATA package-manager=dist-info supported-language=python
 /fixtures/python/pdm/pdm.lock linguist-language=Python package-manager=pdm supported-language=python
 /fixtures/python/pip/requirements.txt linguist-language=Python package-manager=pip supported-language=python
 /fixtures/python/pipenv/Pipfile linguist-language=TOML package-manager=pipenv supported-language=python
