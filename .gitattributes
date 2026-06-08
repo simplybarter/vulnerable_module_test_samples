@@ -6,6 +6,7 @@
 **/expected.json linguist-generated=true
 
 # Vendored dependency trees
+/fixtures/go/vendor/vendor/** linguist-vendored=true
 /fixtures/php/composer-vendor/vendor/** linguist-vendored=true
 /fixtures/ruby/bundle-vendor/vendor/** linguist-vendored=true
 /fixtures/rust/cargo-vendor/vendor/** linguist-vendored=true
@@ -19,6 +20,8 @@
 # Go
 /fixtures/go/mod/go.mod linguist-language=Go package-manager=go-mod supported-language=go
 /fixtures/go/mod/go.sum linguist-language=Go package-manager=go-mod supported-language=go
+/fixtures/go/vendor/go.mod linguist-language=Go package-manager=go-vendor supported-language=go
+/fixtures/go/vendor/vendor/modules.txt package-manager=go-vendor supported-language=go
 
 # Java
 /fixtures/java/gradle/*.gradle linguist-language=Java package-manager=gradle supported-language=java

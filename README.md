@@ -53,7 +53,8 @@ The repository is organized under `fixtures/`, first by language, then by packag
     |   |-- lockfile/
     |   `-- msbuild/
     |-- go/
-    |   `-- mod/
+    |   |-- mod/
+    |   `-- vendor/
     |-- java/
     |   |-- gradle/
     |   |-- gradle-lockfile/
@@ -124,7 +125,7 @@ The current fixture coverage under `fixtures/` is:
 | Language | Fixture Directories | Package Manager / Format Coverage |
 | --- | --- | --- |
 | C# | `legacy`, `lockfile`, `msbuild` | `packages.config`, `packages.lock.json`, SDK-style `.csproj` |
-| Go | `mod` | `go.mod`, `go.sum` |
+| Go | `mod`, `vendor` | `go.mod`, `go.sum`, `vendor/modules.txt` |
 | Java | `gradle`, `gradle-lockfile`, `maven` | `build.gradle`, `gradle.lockfile`, `pom.xml` |
 | Node.js | `bun`, `deno`, `npm`, `pnpm` | `bun.lock`, `deno.lock`, `package-lock.json`, `pnpm-lock.yaml` |
 | PHP | `composer`, `composer-vendor` | `composer.json`, `composer.lock`, vendored Composer metadata |

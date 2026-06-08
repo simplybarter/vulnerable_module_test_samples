@@ -1,0 +1,14 @@
+[
+  {
+    "name": "golang.org/x/net",
+    "version": "0.6.0",
+    "eco": "Go",
+    "type": "installed"
+  },
+  {
+    "name": "golang.org/x/text",
+    "version": "0.8.0",
+    "eco": "Go",
+    "type": "installed"
+  }
+]
