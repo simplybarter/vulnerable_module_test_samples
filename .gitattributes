@@ -42,6 +42,9 @@
 
 # Java
 /fixtures/java/gradle/*.gradle linguist-language=Java package-manager=gradle supported-language=java
+/fixtures/java/gradle-catalog/build.gradle linguist-language=Java package-manager=gradle-version-catalog supported-language=java
+/fixtures/java/gradle-catalog/settings.gradle linguist-language=Java package-manager=gradle-version-catalog supported-language=java
+/fixtures/java/gradle-catalog/gradle/libs.versions.toml linguist-language=TOML package-manager=gradle-version-catalog supported-language=java
 /fixtures/java/gradle-lockfile/*.gradle linguist-language=Java package-manager=gradle-lockfile supported-language=java
 /fixtures/java/gradle-lockfile/gradle.lockfile package-manager=gradle-lockfile supported-language=java
 /fixtures/java/ivy/ivy.xml linguist-language=XML package-manager=ivy supported-language=java

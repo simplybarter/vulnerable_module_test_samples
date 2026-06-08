@@ -1,0 +1,8 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation libs.log4j.core
+    testImplementation libs.junit.jupiter
+}

@@ -61,6 +61,7 @@ The repository is organized under `fixtures/`, first by language, then by packag
     |   `-- vendor/
     |-- java/
     |   |-- gradle/
+    |   |-- gradle-catalog/
     |   |-- gradle-lockfile/
     |   |-- ivy/
     |   |-- maven-repo/
@@ -143,7 +144,7 @@ The current fixture coverage under `fixtures/` is:
 | --- | --- | --- |
 | C# | `central-packages`, `legacy`, `lockfile`, `msbuild`, `paket`, `packages-folder` | `Directory.Packages.props`, `packages.config`, `packages.lock.json`, SDK-style `.csproj`, `paket.dependencies`, `paket.lock`, `paket.references`, extracted NuGet `.nuspec` metadata |
 | Go | `mod`, `vendor`, `workspace` | `go.mod`, `go.sum`, `go.work`, workspace module `go.mod`/`go.sum`, `vendor/modules.txt` |
-| Java | `gradle`, `gradle-lockfile`, `ivy`, `maven`, `maven-repo` | `build.gradle`, `gradle.lockfile`, `ivy.xml`, `pom.xml`, vendored Maven-repository `*.pom` metadata |
+| Java | `gradle`, `gradle-catalog`, `gradle-lockfile`, `ivy`, `maven`, `maven-repo` | `build.gradle`, `settings.gradle`, `gradle/libs.versions.toml`, `gradle.lockfile`, `ivy.xml`, `pom.xml`, vendored Maven-repository `*.pom` metadata |
 | Node.js | `bun`, `deno`, `node-modules`, `npm`, `npm-shrinkwrap`, `pnpm`, `yarn-berry`, `yarn` | `bun.lock`, `deno.lock`, checked-in `node_modules/**/package.json` metadata, `package-lock.json`, `npm-shrinkwrap.json`, `pnpm-lock.yaml`, Yarn Berry `package.json` + `.yarnrc.yml` + `yarn.lock`, Yarn Classic `package.json` + `yarn.lock` |
 | PHP | `composer`, `composer-custom-vendor`, `composer-vendor` | `composer.json`, `composer.lock`, vendored Composer metadata in default and custom vendor directories |
 | Python | `conda_lock`, `dist-info`, `pdm`, `pip`, `pipenv`, `pyproject`, `poetry`, `uv` | `conda-lock.yml`, checked-in `site-packages/*.dist-info/METADATA`, `pdm.lock`, `requirements.txt`, `Pipfile`, `Pipfile.lock`, `pyproject.toml`, `poetry.lock`, `uv.lock` |

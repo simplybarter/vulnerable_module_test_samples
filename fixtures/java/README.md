@@ -7,6 +7,7 @@ This directory contains JVM dependency fixtures for manifest, lockfile, and vend
 | Fixture | Files Under Test | What It Exercises |
 | --- | --- | --- |
 | `gradle/` | `build.gradle` | dependency extraction from Gradle string coordinates across multiple configurations |
+| `gradle-catalog/` | `build.gradle`, `settings.gradle`, `gradle/libs.versions.toml` | Gradle version catalog parsing from alias-based dependency declarations |
 | `gradle-lockfile/` | `build.gradle`, `gradle.lockfile` | Gradle dependency locking with a checked-in lock state |
 | `ivy/` | `ivy.xml` | Apache Ivy dependency extraction from `org`/`name`/`rev` XML attributes |
 | `maven/` | `pom.xml` | dependency extraction from Maven XML dependency blocks |
@@ -19,6 +20,10 @@ This directory contains JVM dependency fixtures for manifest, lockfile, and vend
   - `org.springframework.boot:spring-boot-starter-web` `2.5.4`
   - `org.junit.jupiter:junit-jupiter` `5.7.2`
   - `com.h2database:h2` `1.4.200`
+- `gradle-catalog/` expects:
+  - `type: "manifest"`
+  - `org.apache.logging.log4j:log4j-core` `2.14.1`
+  - `org.junit.jupiter:junit-jupiter` `5.7.2`
 - `gradle-lockfile/` expects:
   - `type: "locked"`
   - `org.apache.logging.log4j:log4j-core` `2.14.1`
@@ -40,6 +45,8 @@ The expected ecosystem label is `Maven`.
 ## Notes
 
 - The Gradle sample includes `implementation`, `testImplementation`, and `runtimeOnly` declarations to verify scanners do not depend on a single configuration name.
+- `gradle-catalog/` covers the `gradle/libs.versions.toml` convention, where dependency identity and versions are declared in a version catalog and referenced indirectly through `libs.*` aliases in `build.gradle`.
+- `gradle-catalog/` intentionally includes the historically vulnerable `org.apache.logging.log4j:log4j-core` `2.14.1` so scanners must resolve a catalog alias to a vulnerable coordinate rather than reading a literal `group:name:version` string.
 - `gradle-lockfile/` uses Gradle dependency locking and a checked-in `gradle.lockfile` to verify locked dependency extraction rather than declared coordinates alone.
 - `gradle-lockfile/` intentionally uses the historically vulnerable `org.apache.logging.log4j:log4j-core` `2.14.1`, which is affected by Log4Shell-era advisories, and includes the transitive `log4j-api` lock entry.
 - `ivy/` covers the older Apache Ivy descriptor format, where dependency identity comes from `org`, `name`, and `rev` attributes rather than Maven `<groupId>` and Gradle string coordinates.
