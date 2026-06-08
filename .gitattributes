@@ -1,0 +1,54 @@
+# Keep fixture expectation snapshots and checked-in third-party metadata out of
+# language statistics, while still tagging the supported package-manager files
+# with the language ecosystems they represent.
+
+# Fixture snapshots
+**/expected.json linguist-generated=true
+
+# Vendored dependency trees
+/php/composer-vendor/vendor/** linguist-vendored=true
+/ruby/bundle-vendor/vendor/** linguist-vendored=true
+/rust/cargo-vendor/vendor/** linguist-vendored=true
+
+# C#
+/csharp/legacy/packages.config linguist-language=C# package-manager=packages.config supported-language=csharp
+/csharp/msbuild/*.csproj linguist-language=C# package-manager=msbuild supported-language=csharp
+
+# Go
+/go/mod/go.mod linguist-language=Go package-manager=go-mod supported-language=go
+/go/mod/go.sum linguist-language=Go package-manager=go-mod supported-language=go
+
+# Java
+/java/gradle/*.gradle linguist-language=Java package-manager=gradle supported-language=java
+/java/maven/pom.xml linguist-language=Java package-manager=maven supported-language=java
+
+# Node.js
+/node/bun/bun.lock linguist-language=JavaScript package-manager=bun supported-language=javascript
+/node/deno/deno.lock linguist-language=JavaScript package-manager=deno supported-language=javascript
+/node/npm/package-lock.json linguist-language=JavaScript package-manager=npm supported-language=javascript
+
+# PHP
+/php/composer/composer.json linguist-language=PHP package-manager=composer supported-language=php
+/php/composer/composer.lock linguist-language=PHP package-manager=composer supported-language=php
+/php/composer-vendor/composer.json linguist-language=PHP package-manager=composer-vendor supported-language=php
+/php/composer-vendor/vendor/composer/installed.json linguist-language=PHP package-manager=composer-vendor supported-language=php
+
+# Python
+/python/conda_lock/conda-lock.yml linguist-language=Python package-manager=conda-lock supported-language=python
+/python/pdm/pdm.lock linguist-language=Python package-manager=pdm supported-language=python
+/python/pip/requirements.txt linguist-language=Python package-manager=pip supported-language=python
+/python/poetry/poetry.lock linguist-language=Python package-manager=poetry supported-language=python
+/python/uv/uv.lock linguist-language=Python package-manager=uv supported-language=python
+
+# Ruby
+/ruby/bundle-vendor/Gemfile linguist-language=Ruby package-manager=bundle-vendor supported-language=ruby
+/ruby/bundle-vendor/vendor/**/*.gemspec linguist-language=Ruby package-manager=bundle-vendor supported-language=ruby
+/ruby/bundler/Gemfile.lock linguist-language=Ruby package-manager=bundler supported-language=ruby
+
+# Rust
+/rust/cargo/Cargo.toml linguist-language=Rust package-manager=cargo supported-language=rust
+/rust/cargo-vendor/Cargo.toml linguist-language=Rust package-manager=cargo-vendor supported-language=rust
+/rust/cargo-vendor/vendor/**/Cargo.toml linguist-language=Rust package-manager=cargo-vendor supported-language=rust
+
+# Zig
+/zig/zig/build.zig.zon linguist-language=Zig package-manager=zig supported-language=zig
