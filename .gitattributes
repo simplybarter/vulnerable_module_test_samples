@@ -6,6 +6,7 @@
 **/expected.json linguist-generated=true
 
 # Vendored dependency trees
+/fixtures/csharp/packages-folder/packages/** linguist-vendored=true
 /fixtures/go/vendor/vendor/** linguist-vendored=true
 /fixtures/php/composer-vendor/vendor/** linguist-vendored=true
 /fixtures/ruby/bundle-vendor/vendor/** linguist-vendored=true
@@ -16,6 +17,9 @@
 /fixtures/csharp/lockfile/*.csproj linguist-language=C# package-manager=nuget-lockfile supported-language=csharp
 /fixtures/csharp/lockfile/packages.lock.json linguist-language=JSON package-manager=nuget-lockfile supported-language=csharp
 /fixtures/csharp/msbuild/*.csproj linguist-language=C# package-manager=msbuild supported-language=csharp
+/fixtures/csharp/packages-folder/packages.config linguist-language=XML package-manager=packages.config supported-language=csharp
+/fixtures/csharp/packages-folder/nuget.config linguist-language=XML package-manager=nuget-packages-folder supported-language=csharp
+/fixtures/csharp/packages-folder/packages/**/*.nuspec linguist-language=XML package-manager=nuget-packages-folder supported-language=csharp
 
 # Go
 /fixtures/go/mod/go.mod linguist-language=Go package-manager=go-mod supported-language=go
