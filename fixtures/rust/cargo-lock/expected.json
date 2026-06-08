@@ -1,0 +1,38 @@
+[
+  {
+    "name": "idna",
+    "version": "0.5",
+    "eco": "crates.io",
+    "type": "manifest"
+  },
+  {
+    "name": "idna",
+    "version": "0.5.0",
+    "eco": "crates.io",
+    "type": "locked"
+  },
+  {
+    "name": "tinyvec",
+    "version": "1.6.0",
+    "eco": "crates.io",
+    "type": "locked"
+  },
+  {
+    "name": "tinyvec_macros",
+    "version": "0.1.0",
+    "eco": "crates.io",
+    "type": "locked"
+  },
+  {
+    "name": "unicode-bidi",
+    "version": "0.3.13",
+    "eco": "crates.io",
+    "type": "locked"
+  },
+  {
+    "name": "unicode-normalization",
+    "version": "0.1.22",
+    "eco": "crates.io",
+    "type": "locked"
+  }
+]

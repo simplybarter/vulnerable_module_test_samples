@@ -66,6 +66,8 @@
 
 # Rust
 /fixtures/rust/cargo/Cargo.toml linguist-language=Rust package-manager=cargo supported-language=rust
+/fixtures/rust/cargo-lock/Cargo.toml linguist-language=Rust package-manager=cargo-lock supported-language=rust
+/fixtures/rust/cargo-lock/Cargo.lock package-manager=cargo-lock supported-language=rust
 /fixtures/rust/cargo-vendor/Cargo.toml linguist-language=Rust package-manager=cargo-vendor supported-language=rust
 /fixtures/rust/cargo-vendor/vendor/**/Cargo.toml linguist-language=Rust package-manager=cargo-vendor supported-language=rust
 
