@@ -73,6 +73,7 @@ The repository is organized under `fixtures/`, first by language, then by packag
     |   |-- conda_lock/
     |   |-- pdm/
     |   |-- pip/
+    |   |-- pipenv/
     |   |-- poetry/
     |   `-- uv/
     |-- ruby/
@@ -131,7 +132,7 @@ The current fixture coverage under `fixtures/` is:
 | Java | `gradle`, `gradle-lockfile`, `maven` | `build.gradle`, `gradle.lockfile`, `pom.xml` |
 | Node.js | `bun`, `deno`, `npm`, `pnpm` | `bun.lock`, `deno.lock`, `package-lock.json`, `pnpm-lock.yaml` |
 | PHP | `composer`, `composer-custom-vendor`, `composer-vendor` | `composer.json`, `composer.lock`, vendored Composer metadata in default and custom vendor directories |
-| Python | `conda_lock`, `pdm`, `pip`, `poetry`, `uv` | `conda-lock.yml`, `pdm.lock`, `requirements.txt`, `poetry.lock`, `uv.lock` |
+| Python | `conda_lock`, `pdm`, `pip`, `pipenv`, `poetry`, `uv` | `conda-lock.yml`, `pdm.lock`, `requirements.txt`, `Pipfile`, `Pipfile.lock`, `poetry.lock`, `uv.lock` |
 | Ruby | `bundle-vendor`, `bundler` | `Gemfile`, `Gemfile.lock`, vendored gem specifications |
 | Rust | `cargo`, `cargo-vendor` | `Cargo.toml`, vendored Cargo package metadata |
 | Zig | `zig` | `build.zig.zon` |

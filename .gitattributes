@@ -53,6 +53,8 @@
 /fixtures/python/conda_lock/conda-lock.yml linguist-language=Python package-manager=conda-lock supported-language=python
 /fixtures/python/pdm/pdm.lock linguist-language=Python package-manager=pdm supported-language=python
 /fixtures/python/pip/requirements.txt linguist-language=Python package-manager=pip supported-language=python
+/fixtures/python/pipenv/Pipfile linguist-language=TOML package-manager=pipenv supported-language=python
+/fixtures/python/pipenv/Pipfile.lock linguist-language=JSON package-manager=pipenv supported-language=python
 /fixtures/python/poetry/poetry.lock linguist-language=Python package-manager=poetry supported-language=python
 /fixtures/python/uv/uv.lock linguist-language=Python package-manager=uv supported-language=python
 

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "urllib3",
+    "version": "2.0.5",
+    "eco": "PyPI",
+    "type": "manifest"
+  },
+  {
+    "name": "pytest",
+    "version": "7.4.0",
+    "eco": "PyPI",
+    "type": "manifest"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.0.5",
+    "eco": "PyPI",
+    "type": "locked"
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.0.0",
+    "eco": "PyPI",
+    "type": "locked"
+  },
+  {
+    "name": "packaging",
+    "version": "23.2",
+    "eco": "PyPI",
+    "type": "locked"
+  },
+  {
+    "name": "pluggy",
+    "version": "1.3.0",
+    "eco": "PyPI",
+    "type": "locked"
+  },
+  {
+    "name": "pytest",
+    "version": "7.4.0",
+    "eco": "PyPI",
+    "type": "locked"
+  }
+]

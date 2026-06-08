@@ -7,6 +7,7 @@ This directory contains Python dependency fixtures across several package manage
 | Fixture | Files Under Test | What It Exercises |
 | --- | --- | --- |
 | `pip/` | `requirements.txt` | plain requirements parsing with exact pins, range constraints, comments, and inline comments |
+| `pipenv/` | `Pipfile`, `Pipfile.lock` | Pipenv manifest and lockfile parsing across `default` and `develop` dependency sections |
 | `poetry/` | `poetry.lock` | Poetry lockfile parsing |
 | `pdm/` | `pdm.lock` | PDM lockfile parsing |
 | `uv/` | `uv.lock` | uv lockfile parsing |
@@ -18,6 +19,14 @@ This directory contains Python dependency fixtures across several package manage
   - `requests` `2.31.0`
   - `flask` `3.0.0`
   - `django` `5.0.0`
+- `pipenv/` mixes types and expects:
+  - `manifest`: `urllib3` `2.0.5`
+  - `manifest`: `pytest` `7.4.0`
+  - `locked`: `urllib3` `2.0.5`
+  - `locked`: `iniconfig` `2.0.0`
+  - `locked`: `packaging` `23.2`
+  - `locked`: `pluggy` `1.3.0`
+  - `locked`: `pytest` `7.4.0`
 - `poetry/` uses `type: "locked"` and expects `requests` `2.31.0` and `urllib3` `2.1.0`
 - `pdm/` uses `type: "locked"` and expects `pdm-test` `2.0.1` and `requests` `2.31.0`
 - `uv/` uses `type: "locked"` and expects `anyio` `4.3.0` and `idna` `3.6`
@@ -28,5 +37,7 @@ The expected ecosystem label is `PyPI` across all current fixtures.
 ## Notes
 
 - `pip/` is intentionally useful for scanners that need to ignore comments while still extracting normalized package names and versions from mixed requirement syntax.
+- `pipenv/` uses an exact-pinned `Pipfile` and a checked-in `Pipfile.lock`, which exercises both top-level declarations and fully resolved locked versions for the same project.
+- `pipenv/` intentionally places `urllib3` `2.0.5` in the runtime dependency set and `pytest` `7.4.0` in the development dependency set so scanners must inspect both `default` and `develop` sections of `Pipfile.lock`.
 - `poetry/`, `pdm/`, and `uv/` provide three distinct lockfile syntaxes that should all resolve to PyPI package/version pairs.
 - `conda_lock/` currently expects packages to be reported with the `PyPI` ecosystem label even though the source file is a Conda lockfile; this is part of the current fixture contract and should be preserved unless the corpus is intentionally redefined.
