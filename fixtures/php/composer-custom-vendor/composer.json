@@ -1,0 +1,9 @@
+{
+    "name": "test/php-custom-vendor-project",
+    "config": {
+        "vendor-dir": "deps"
+    },
+    "require": {
+        "symfony/http-foundation": "6.4.13"
+    }
+}

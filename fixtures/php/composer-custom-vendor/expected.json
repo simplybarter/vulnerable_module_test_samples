@@ -1,0 +1,20 @@
+[
+  {
+    "name": "symfony/http-foundation",
+    "version": "6.4.13",
+    "eco": "Packagist",
+    "type": "manifest"
+  },
+  {
+    "name": "symfony/http-foundation",
+    "version": "6.4.13",
+    "eco": "Packagist",
+    "type": "installed"
+  },
+  {
+    "name": "symfony/deprecation-contracts",
+    "version": "3.5.1",
+    "eco": "Packagist",
+    "type": "installed"
+  }
+]

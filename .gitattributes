@@ -8,6 +8,7 @@
 # Vendored dependency trees
 /fixtures/csharp/packages-folder/packages/** linguist-vendored=true
 /fixtures/go/vendor/vendor/** linguist-vendored=true
+/fixtures/php/composer-custom-vendor/deps/** linguist-vendored=true
 /fixtures/php/composer-vendor/vendor/** linguist-vendored=true
 /fixtures/ruby/bundle-vendor/vendor/** linguist-vendored=true
 /fixtures/rust/cargo-vendor/vendor/** linguist-vendored=true
@@ -43,6 +44,8 @@
 # PHP
 /fixtures/php/composer/composer.json linguist-language=PHP package-manager=composer supported-language=php
 /fixtures/php/composer/composer.lock linguist-language=PHP package-manager=composer supported-language=php
+/fixtures/php/composer-custom-vendor/composer.json linguist-language=PHP package-manager=composer-custom-vendor supported-language=php
+/fixtures/php/composer-custom-vendor/deps/composer/installed.json linguist-language=PHP package-manager=composer-custom-vendor supported-language=php
 /fixtures/php/composer-vendor/composer.json linguist-language=PHP package-manager=composer-vendor supported-language=php
 /fixtures/php/composer-vendor/vendor/composer/installed.json linguist-language=PHP package-manager=composer-vendor supported-language=php
 

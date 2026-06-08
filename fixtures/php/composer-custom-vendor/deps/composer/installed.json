@@ -1,0 +1,15 @@
+{
+    "dev": false,
+    "packages": [
+        {
+            "name": "symfony/http-foundation",
+            "version": "6.4.13",
+            "installed-path": "../symfony/http-foundation"
+        },
+        {
+            "name": "symfony/deprecation-contracts",
+            "version": "3.5.1",
+            "installed-path": "../symfony/deprecation-contracts"
+        }
+    ]
+}
