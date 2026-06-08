@@ -28,7 +28,7 @@ When adding or editing fixtures:
 - include only the files needed to exercise the dependency-discovery behavior under test
 - prefer synthetic samples over real application code
 - preserve intentionally unusual cases if they are part of the test contract
-- add or update `expected.json` in the fixture directory
+- add or update `expected.json` in the relevant `fixtures/<language>/<fixture>/` directory
 
 Each `expected.json` entry should continue to use:
 
@@ -41,8 +41,8 @@ Each `expected.json` entry should continue to use:
 
 Update documentation when behavior changes:
 
-- update the relevant language `README.md` when you add or modify fixtures in that language directory
-- update the root [README.md](README.md) if you add a new language or change the top-level repository contract
+- update `fixtures/<language>/README.md` when you add or modify fixtures for that language
+- update the root [README.md](README.md) if you add a new language under `fixtures/` or change the repository-wide fixture contract
 - explain non-obvious fixture choices in the README instead of leaving them implicit
 
 ## Pull Request Expectations
@@ -50,7 +50,7 @@ Update documentation when behavior changes:
 Before opening a pull request:
 
 - verify that the fixture files and `expected.json` agree
-- make sure file names and directory names are consistent with the existing layout
+- make sure file names and directory names are consistent with the `fixtures/<language>/<fixture>/` layout
 - keep vendored metadata limited to the minimum needed for the test case
 - describe the dependency-discovery behavior the change is intended to exercise
 

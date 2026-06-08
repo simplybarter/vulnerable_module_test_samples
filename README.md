@@ -15,7 +15,7 @@ Use this repository to validate whether a scanner can:
 - normalize package names and ecosystems correctly
 - return the versions intentionally embedded in each fixture
 
-Each fixture directory includes an `expected.json` file that acts as the oracle for what a scanner should surface from that sample.
+Each fixture directory under `fixtures/` includes an `expected.json` file that acts as the oracle for what a scanner should surface from that sample.
 
 Where src code is included the intention is to surface referenced modules and related versions NOT whether the code is actually functional.
 
@@ -43,39 +43,40 @@ The fixtures are intentionally static. They should be treated as dependency-disc
 
 ## Layout
 
-The repository is organized first by language, then by package manager or dependency format:
+The repository is organized under `fixtures/`, first by language, then by package manager or dependency format:
 
 ```text
 .
-|-- csharp/
-|   |-- legacy/
-|   `-- msbuild/
-|-- go/
-|   `-- mod/
-|-- java/
-|   |-- gradle/
-|   `-- maven/
-|-- node/
-|   |-- bun/
-|   |-- deno/
-|   `-- npm/
-|-- php/
-|   |-- composer/
-|   `-- composer-vendor/
-|-- python/
-|   |-- conda_lock/
-|   |-- pdm/
-|   |-- pip/
-|   |-- poetry/
-|   `-- uv/
-|-- ruby/
-|   |-- bundle-vendor/
-|   `-- bundler/
-|-- rust/
-|   |-- cargo/
-|   `-- cargo-vendor/
-`-- zig/
+`-- fixtures/
+    |-- csharp/
+    |   |-- legacy/
+    |   `-- msbuild/
+    |-- go/
+    |   `-- mod/
+    |-- java/
+    |   |-- gradle/
+    |   `-- maven/
+    |-- node/
+    |   |-- bun/
+    |   |-- deno/
+    |   `-- npm/
+    |-- php/
+    |   |-- composer/
+    |   `-- composer-vendor/
+    |-- python/
+    |   |-- conda_lock/
+    |   |-- pdm/
+    |   |-- pip/
+    |   |-- poetry/
+    |   `-- uv/
+    |-- ruby/
+    |   |-- bundle-vendor/
+    |   `-- bundler/
+    |-- rust/
+    |   |-- cargo/
+    |   `-- cargo-vendor/
     `-- zig/
+        `-- zig/
 ```
 
 ## Fixture Contract
@@ -115,7 +116,7 @@ Some fixtures intentionally include more than one discovery type so scanners can
 
 ## Coverage
 
-The current top-level coverage is:
+The current fixture coverage under `fixtures/` is:
 
 | Language | Fixture Directories | Package Manager / Format Coverage |
 | --- | --- | --- |
@@ -133,11 +134,11 @@ The current top-level coverage is:
 
 Typical uses:
 
-1. Run a dependency extraction or vulnerability surfacing service against the repository or against individual fixture directories.
+1. Run a dependency extraction or vulnerability surfacing service against the repository or against individual directories under `fixtures/`.
 2. Compare the tool output for each fixture with that fixture's `expected.json`.
 3. Record mismatches such as missed dependencies, incorrect version resolution, wrong ecosystem mapping, or false positives.
 
-This root README intentionally stays high-level. Language-specific behavior, edge cases, and scanner expectations can be documented in per-directory `README.md` files later.
+This root README intentionally stays high-level. Language-specific behavior, edge cases, and scanner expectations are documented in `fixtures/<language>/README.md`.
 
 ## Contributing
 
@@ -149,7 +150,7 @@ Before opening a pull request:
 - keep fixtures minimal and deterministic
 - include or update the relevant `expected.json`
 - update the appropriate language README when adding or changing fixture behavior
-- update this root README if you add a new language or top-level fixture category
+- update this root README if you add a new language under `fixtures/` or change the repository-wide fixture contract
 
 ## Security
 

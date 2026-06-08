@@ -34,7 +34,7 @@ Support for this repository does not include:
 Please check:
 
 - the root [README.md](README.md)
-- the language-specific README for the relevant fixture directory
+- `fixtures/<language>/README.md` for the relevant fixture family
 - the fixture's `expected.json`
 
 If the question is actually about a repository security issue, follow [SECURITY.md](SECURITY.md) instead.
