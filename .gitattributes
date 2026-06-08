@@ -12,6 +12,8 @@
 
 # C#
 /fixtures/csharp/legacy/packages.config linguist-language=C# package-manager=packages.config supported-language=csharp
+/fixtures/csharp/lockfile/*.csproj linguist-language=C# package-manager=nuget-lockfile supported-language=csharp
+/fixtures/csharp/lockfile/packages.lock.json linguist-language=JSON package-manager=nuget-lockfile supported-language=csharp
 /fixtures/csharp/msbuild/*.csproj linguist-language=C# package-manager=msbuild supported-language=csharp
 
 # Go

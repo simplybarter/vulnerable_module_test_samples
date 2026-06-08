@@ -50,6 +50,7 @@ The repository is organized under `fixtures/`, first by language, then by packag
 `-- fixtures/
     |-- csharp/
     |   |-- legacy/
+    |   |-- lockfile/
     |   `-- msbuild/
     |-- go/
     |   `-- mod/
@@ -120,7 +121,7 @@ The current fixture coverage under `fixtures/` is:
 
 | Language | Fixture Directories | Package Manager / Format Coverage |
 | --- | --- | --- |
-| C# | `legacy`, `msbuild` | `packages.config`, SDK-style `.csproj` |
+| C# | `legacy`, `lockfile`, `msbuild` | `packages.config`, `packages.lock.json`, SDK-style `.csproj` |
 | Go | `mod` | `go.mod`, `go.sum` |
 | Java | `gradle`, `maven` | `build.gradle`, `pom.xml` |
 | Node.js | `bun`, `deno`, `npm` | `bun.lock`, `deno.lock`, `package-lock.json` |

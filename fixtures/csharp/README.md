@@ -1,20 +1,26 @@
 # C# Fixtures
 
-This directory contains NuGet-oriented fixture samples for C# repositories. The current focus is manifest parsing rather than lockfile or installed-package detection.
+This directory contains NuGet-oriented fixture samples for C# repositories across both manifest and lockfile dependency surfaces.
 
 ## Included Fixtures
 
 | Fixture | Files Under Test | What It Exercises |
 | --- | --- | --- |
 | `legacy/` | `packages.config` | legacy NuGet package declaration parsing |
+| `lockfile/` | `App.csproj`, `packages.lock.json` | SDK-style `PackageReference` with checked-in NuGet lockfile parsing |
 | `msbuild/` | `App.csproj` | SDK-style MSBuild `PackageReference` parsing |
 
 ## Expected Detection Behavior
 
-Both fixtures use `type: "manifest"` in `expected.json`.
-
-- `legacy/` expects `EntityFramework` `6.4.4` and `Newtonsoft.Json` `13.0.1`
-- `msbuild/` expects `Newtonsoft.Json` `12.0.1` and `Microsoft.Extensions.Logging` `5.0.0`
+- `legacy/` uses `type: "manifest"` and expects `EntityFramework` `6.4.4` and `Newtonsoft.Json` `13.0.1`
+- `msbuild/` uses `type: "manifest"` and expects `Newtonsoft.Json` `12.0.1` and `Microsoft.Extensions.Logging` `5.0.0`
+- `lockfile/` uses `type: "locked"` and expects:
+  - `Newtonsoft.Json` `12.0.3`
+  - `Microsoft.Extensions.Logging` `5.0.0`
+  - `Microsoft.Extensions.Logging.Abstractions` `5.0.0`
+  - `Microsoft.Extensions.DependencyInjection.Abstractions` `5.0.0`
+  - `Microsoft.Extensions.Options` `5.0.0`
+  - `Microsoft.Extensions.Primitives` `5.0.0`
 
 The expected ecosystem label is `NuGet`.
 
@@ -22,4 +28,5 @@ The expected ecosystem label is `NuGet`.
 
 - `legacy/` covers the older `packages.config` format where package IDs and versions are declared as XML attributes.
 - `msbuild/` covers package references embedded directly in the project file.
-- There is intentionally no NuGet lockfile or vendored package metadata fixture here yet.
+- `lockfile/` models an application-style project with a checked-in `packages.lock.json`, which is useful for scanners that need to distinguish resolved locked packages from direct project-file declarations.
+- `lockfile/` intentionally includes the historically vulnerable `Newtonsoft.Json` `12.0.3` along with transitive logging-related packages so scanners can validate locked dependency extraction beyond a single direct package.
