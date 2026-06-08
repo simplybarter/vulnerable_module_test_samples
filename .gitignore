@@ -32,3 +32,6 @@ coverage/
 reports/
 artifacts/
 *.sarif
+
+# Project specific
+temp
