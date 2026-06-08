@@ -1,0 +1,4 @@
+[
+  {"name": "express", "version": "4.18.2", "eco": "node", "type": "locked"},
+  {"name": "accepts", "version": "1.3.8", "eco": "node", "type": "locked"}
+]

@@ -1,0 +1,12 @@
+{
+    "packages": [
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "7.8.1"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "11.0.0"
+        }
+    ]
+}

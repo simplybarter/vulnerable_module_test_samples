@@ -1,0 +1,8 @@
+[
+  {"name": "serde", "version": "1.0.197", "eco": "crates.io", "type": "manifest"},
+  {"name": "tokio", "version": "1.36.0", "eco": "crates.io", "type": "manifest"},
+  {"name": "anyhow", "version": "1.0.81", "eco": "crates.io", "type": "manifest"},
+  {"name": "criterion", "version": "0.5.1", "eco": "crates.io", "type": "manifest"},
+  {"name": "cc", "version": "1.0.90", "eco": "crates.io", "type": "manifest"},
+  {"name": "openssl", "version": "0.10.64", "eco": "crates.io", "type": "manifest"}
+]

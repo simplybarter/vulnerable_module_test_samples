@@ -1,0 +1,26 @@
+[
+    {
+        "name": "nokogiri",
+        "version": "1.15",
+        "eco": "RubyGems",
+        "type": "manifest"
+    },
+    {
+        "name": "rails",
+        "version": "7.1",
+        "eco": "RubyGems",
+        "type": "manifest"
+    },
+    {
+        "name": "nokogiri",
+        "version": "1.16.2",
+        "eco": "RubyGems",
+        "type": "installed"
+    },
+    {
+        "name": "rails",
+        "version": "7.1.3",
+        "eco": "RubyGems",
+        "type": "installed"
+    }
+]

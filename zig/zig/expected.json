@@ -1,0 +1,4 @@
+[
+  {"name": "zap", "version": "0.8.0", "eco": "Zig", "type": "manifest"},
+  {"name": "hzzp", "version": "0.1.2", "eco": "Zig", "type": "manifest"}
+]

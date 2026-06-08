@@ -1,0 +1,11 @@
+{
+  "lockfileVersion": 1,
+  "packages": {
+    "hono@4.0.0": {
+      "integrity": "sha512-..."
+    },
+    "zod@3.22.4": {
+      "integrity": "sha512-..."
+    }
+  }
+}

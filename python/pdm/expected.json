@@ -1,0 +1,4 @@
+[
+  {"name": "pdm-test", "version": "2.0.1", "eco": "PyPI", "type": "locked"},
+  {"name": "requests", "version": "2.31.0", "eco": "PyPI", "type": "locked"}
+]

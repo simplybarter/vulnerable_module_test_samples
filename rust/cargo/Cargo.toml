@@ -1,0 +1,15 @@
+[workspace.dependencies]
+serde = "1.0.197"
+
+[dependencies]
+tokio = { version = "1.36.0", features = ["full"] }
+anyhow = "1.0.81"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[build-dependencies]
+cc = "1.0.90"
+
+[target.'cfg(unix)'.dependencies]
+openssl = "0.10.64"

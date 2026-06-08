@@ -1,0 +1,4 @@
+[
+  {"name": "anyio", "version": "4.3.0", "eco": "PyPI", "type": "locked"},
+  {"name": "idna", "version": "3.6", "eco": "PyPI", "type": "locked"}
+]

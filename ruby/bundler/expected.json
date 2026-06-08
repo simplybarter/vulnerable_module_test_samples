@@ -1,0 +1,8 @@
+[
+  {"name": "activesupport", "version": "7.1.2", "eco": "RubyGems", "type": "locked"},
+  {"name": "concurrent-ruby", "version": "1.2.2", "eco": "RubyGems", "type": "locked"},
+  {"name": "i18n", "version": "1.14.1", "eco": "RubyGems", "type": "locked"},
+  {"name": "minitest", "version": "5.20.0", "eco": "RubyGems", "type": "locked"},
+  {"name": "tzinfo", "version": "2.0.6", "eco": "RubyGems", "type": "locked"},
+  {"name": "rails-assets-jquery", "version": "3.7.1", "eco": "RubyGems", "type": "locked"}
+]

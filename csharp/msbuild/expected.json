@@ -1,0 +1,4 @@
+[
+  {"name": "Newtonsoft.Json", "version": "12.0.1", "eco": "NuGet", "type": "manifest"},
+  {"name": "Microsoft.Extensions.Logging", "version": "5.0.0", "eco": "NuGet", "type": "manifest"}
+]

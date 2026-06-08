@@ -1,0 +1,4 @@
+[
+  {"name": "EntityFramework", "version": "6.4.4", "eco": "NuGet", "type": "manifest"},
+  {"name": "Newtonsoft.Json", "version": "13.0.1", "eco": "NuGet", "type": "manifest"}
+]

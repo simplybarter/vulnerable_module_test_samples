@@ -1,0 +1,34 @@
+# Root .gitignore for local noise only.
+# Keep this conservative: fixture files in this repository may intentionally
+# include vendored dependency metadata or package-manager artifacts.
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Local environment files
+.env
+.env.*
+
+# Generic local caches and reports
+.cache/
+coverage/
+reports/
+artifacts/
+*.sarif

@@ -1,0 +1,7 @@
+{
+    "name": "test/php-vendor-project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "laravel/framework": "11.0.0"
+    }
+}

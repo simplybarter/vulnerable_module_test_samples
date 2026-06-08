@@ -1,0 +1,26 @@
+[
+    {
+        "name": "serde",
+        "version": "1.0",
+        "eco": "crates.io",
+        "type": "manifest"
+    },
+    {
+        "name": "serde_json",
+        "version": "1.0",
+        "eco": "crates.io",
+        "type": "manifest"
+    },
+    {
+        "name": "serde",
+        "version": "1.0.197",
+        "eco": "crates.io",
+        "type": "installed"
+    },
+    {
+        "name": "serde_json",
+        "version": "1.0.114",
+        "eco": "crates.io",
+        "type": "installed"
+    }
+]

@@ -1,0 +1,4 @@
+[
+  {"name": "hono", "version": "4.0.0", "eco": "node", "type": "locked"},
+  {"name": "zod", "version": "3.22.4", "eco": "node", "type": "locked"}
+]

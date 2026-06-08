@@ -1,0 +1,5 @@
+[
+  {"name": "guzzlehttp/guzzle", "version": "7.0.1", "eco": "Packagist", "type": "locked"},
+  {"name": "laravel/framework", "version": "8.12.0", "eco": "Packagist", "type": "locked"},
+  {"name": "phpunit/phpunit", "version": "9.3.0", "eco": "Packagist", "type": "locked"}
+]

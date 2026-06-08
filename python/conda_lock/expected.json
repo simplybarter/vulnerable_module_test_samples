@@ -1,0 +1,6 @@
+[
+  {"name": "pandas", "version": "2.1.1", "eco": "PyPI", "type": "locked"},
+  {"name": "numpy", "version": "1.26.0", "eco": "PyPI", "type": "locked"},
+  {"name": "requests", "version": "2.31.0", "eco": "PyPI", "type": "locked"},
+  {"name": "django", "version": "5.0.0", "eco": "PyPI", "type": "locked"}
+]

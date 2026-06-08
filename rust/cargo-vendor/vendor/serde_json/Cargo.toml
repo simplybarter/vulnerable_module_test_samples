@@ -1,0 +1,4 @@
+[package]
+name = "serde_json"
+version = "1.0.114"
+description = "A JSON serialization file format"

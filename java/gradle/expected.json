@@ -1,0 +1,5 @@
+[
+  {"name": "org.springframework.boot:spring-boot-starter-web", "version": "2.5.4", "eco": "Maven", "type": "manifest"},
+  {"name": "org.junit.jupiter:junit-jupiter", "version": "5.7.2", "eco": "Maven", "type": "manifest"},
+  {"name": "com.h2database:h2", "version": "1.4.200", "eco": "Maven", "type": "manifest"}
+]
