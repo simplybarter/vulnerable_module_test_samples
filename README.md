@@ -64,6 +64,7 @@ The repository is organized under `fixtures/`, first by language, then by packag
     |   |-- bun/
     |   |-- deno/
     |   |-- npm/
+    |   |-- npm-shrinkwrap/
     |   |-- pnpm/
     |   `-- yarn/
     |-- php/
@@ -134,7 +135,7 @@ The current fixture coverage under `fixtures/` is:
 | C# | `legacy`, `lockfile`, `msbuild`, `packages-folder` | `packages.config`, `packages.lock.json`, SDK-style `.csproj`, extracted NuGet `.nuspec` metadata |
 | Go | `mod`, `vendor` | `go.mod`, `go.sum`, `vendor/modules.txt` |
 | Java | `gradle`, `gradle-lockfile`, `maven` | `build.gradle`, `gradle.lockfile`, `pom.xml` |
-| Node.js | `bun`, `deno`, `npm`, `pnpm`, `yarn` | `bun.lock`, `deno.lock`, `package-lock.json`, `pnpm-lock.yaml`, Yarn Classic `package.json` + `yarn.lock` |
+| Node.js | `bun`, `deno`, `npm`, `npm-shrinkwrap`, `pnpm`, `yarn` | `bun.lock`, `deno.lock`, `package-lock.json`, `npm-shrinkwrap.json`, `pnpm-lock.yaml`, Yarn Classic `package.json` + `yarn.lock` |
 | PHP | `composer`, `composer-custom-vendor`, `composer-vendor` | `composer.json`, `composer.lock`, vendored Composer metadata in default and custom vendor directories |
 | Python | `conda_lock`, `pdm`, `pip`, `pipenv`, `poetry`, `uv` | `conda-lock.yml`, `pdm.lock`, `requirements.txt`, `Pipfile`, `Pipfile.lock`, `poetry.lock`, `uv.lock` |
 | Ruby | `bundle-vendor`, `bundler`, `gemfile` | `Gemfile`, `Gemfile.lock`, vendored gem specifications |

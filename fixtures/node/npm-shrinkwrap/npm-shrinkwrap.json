@@ -1,0 +1,26 @@
+{
+  "name": "test-npm-shrinkwrap",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "test-npm-shrinkwrap",
+      "version": "1.0.0",
+      "dependencies": {
+        "mkdirp": "^0.5.1"
+      }
+    },
+    "node_modules/mkdirp": {
+      "version": "0.5.1",
+      "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
+      "dependencies": {
+        "minimist": "0.0.8"
+      }
+    },
+    "node_modules/minimist": {
+      "version": "0.0.8",
+      "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
+    }
+  }
+}
