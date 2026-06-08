@@ -1,6 +1,6 @@
 # Node.js Fixtures
 
-This directory contains JavaScript and TypeScript ecosystem fixtures that exercise lockfile parsing across multiple runtimes and package managers.
+This directory contains JavaScript and TypeScript ecosystem fixtures that exercise manifest, lockfile, and installed-package parsing across multiple runtimes and package managers.
 
 ## Included Fixtures
 
@@ -8,6 +8,7 @@ This directory contains JavaScript and TypeScript ecosystem fixtures that exerci
 | --- | --- | --- |
 | `bun/` | `bun.lock` | Bun lockfile parsing |
 | `deno/` | `deno.lock` | Deno lock parsing for both npm-backed packages and remote imports |
+| `node-modules/` | `package.json`, `node_modules/**/package.json` | checked-in installed package metadata parsing from a nested `node_modules` tree |
 | `npm/` | `package-lock.json` | npm package-lock parsing including transitive dependencies |
 | `npm-shrinkwrap/` | `package.json`, `npm-shrinkwrap.json`, `package-lock.json` | npm shrinkwrap parsing and documented precedence over a conflicting `package-lock.json` |
 | `pnpm/` | `package.json`, `pnpm-lock.yaml` | pnpm lockfile parsing through importer and package sections |
@@ -18,6 +19,10 @@ This directory contains JavaScript and TypeScript ecosystem fixtures that exerci
 Most fixtures in this directory use `type: "locked"` only. `yarn/` intentionally mixes `manifest` and `locked` evidence in the same fixture.
 
 - `bun/` expects `hono` `4.0.0` and `zod` `3.22.4`
+- `node-modules/` expects:
+  - manifest package `mkdirp` `^0.5.1`
+  - installed package `mkdirp` `0.5.1`
+  - installed transitive package `minimist` `0.0.8`
 - `npm/` expects `express` `4.18.2` and transitive `accepts` `1.3.8`
 - `npm-shrinkwrap/` expects:
   - manifest package `mkdirp` `^0.5.1`
@@ -38,6 +43,8 @@ The expected ecosystem label is `node`.
 ## Notes
 
 - `npm/` is useful for validating traversal of the `packages` object in lockfile version 3.
+- `node-modules/` is useful for validating scanners that inspect checked-in installed package metadata rather than only manifests and lockfiles.
+- `node-modules/` intentionally places `minimist` under `node_modules/mkdirp/node_modules/` so scanners can prove they recurse through nested installed dependency trees instead of only reading the first level.
 - `npm-shrinkwrap/` is useful for validating npm's documented lockfile precedence: when both files exist, `npm-shrinkwrap.json` wins and `package-lock.json` is ignored.
 - `npm-shrinkwrap/` intentionally includes a conflicting `package-lock.json` that resolves `mkdirp` and `minimist` to different versions so scanners can prove they prefer the shrinkwrap tree.
 - `pnpm/` is useful for validating scanners that read both the `importers` block and the `packages` map from `pnpm-lock.yaml`.

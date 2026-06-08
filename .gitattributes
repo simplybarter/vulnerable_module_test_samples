@@ -8,6 +8,7 @@
 # Vendored dependency trees
 /fixtures/csharp/packages-folder/packages/** linguist-vendored=true
 /fixtures/go/vendor/vendor/** linguist-vendored=true
+/fixtures/node/node-modules/node_modules/** linguist-vendored=true
 /fixtures/php/composer-custom-vendor/deps/** linguist-vendored=true
 /fixtures/php/composer-vendor/vendor/** linguist-vendored=true
 /fixtures/ruby/bundle-vendor/vendor/** linguist-vendored=true
@@ -37,6 +38,8 @@
 # Node.js
 /fixtures/node/bun/bun.lock linguist-language=JavaScript package-manager=bun supported-language=javascript
 /fixtures/node/deno/deno.lock linguist-language=JavaScript package-manager=deno supported-language=javascript
+/fixtures/node/node-modules/package.json linguist-language=JSON package-manager=node-modules supported-language=javascript
+/fixtures/node/node-modules/node_modules/**/package.json linguist-language=JSON package-manager=node-modules supported-language=javascript
 /fixtures/node/npm/package-lock.json linguist-language=JavaScript package-manager=npm supported-language=javascript
 /fixtures/node/npm-shrinkwrap/package.json linguist-language=JSON package-manager=npm-shrinkwrap supported-language=javascript
 /fixtures/node/npm-shrinkwrap/npm-shrinkwrap.json linguist-language=JavaScript package-manager=npm-shrinkwrap supported-language=javascript
