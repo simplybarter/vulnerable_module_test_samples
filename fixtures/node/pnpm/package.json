@@ -1,0 +1,9 @@
+{
+  "name": "test-pnpm-lockfile",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.0.0",
+  "dependencies": {
+    "express": "4.18.2",
+    "lodash": "4.17.20"
+  }
+}

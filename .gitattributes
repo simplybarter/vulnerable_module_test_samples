@@ -28,6 +28,8 @@
 /fixtures/node/bun/bun.lock linguist-language=JavaScript package-manager=bun supported-language=javascript
 /fixtures/node/deno/deno.lock linguist-language=JavaScript package-manager=deno supported-language=javascript
 /fixtures/node/npm/package-lock.json linguist-language=JavaScript package-manager=npm supported-language=javascript
+/fixtures/node/pnpm/package.json linguist-language=JSON package-manager=pnpm supported-language=javascript
+/fixtures/node/pnpm/pnpm-lock.yaml linguist-language=YAML package-manager=pnpm supported-language=javascript
 
 # PHP
 /fixtures/php/composer/composer.json linguist-language=PHP package-manager=composer supported-language=php
