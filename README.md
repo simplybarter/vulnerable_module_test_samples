@@ -69,6 +69,7 @@ The repository is organized under `fixtures/`, first by language, then by packag
     |   |-- npm/
     |   |-- npm-shrinkwrap/
     |   |-- pnpm/
+    |   |-- yarn-berry/
     |   `-- yarn/
     |-- php/
     |   |-- composer/
@@ -139,7 +140,7 @@ The current fixture coverage under `fixtures/` is:
 | C# | `legacy`, `lockfile`, `msbuild`, `packages-folder` | `packages.config`, `packages.lock.json`, SDK-style `.csproj`, extracted NuGet `.nuspec` metadata |
 | Go | `mod`, `vendor`, `workspace` | `go.mod`, `go.sum`, `go.work`, workspace module `go.mod`/`go.sum`, `vendor/modules.txt` |
 | Java | `gradle`, `gradle-lockfile`, `maven`, `maven-repo` | `build.gradle`, `gradle.lockfile`, `pom.xml`, vendored Maven-repository `*.pom` metadata |
-| Node.js | `bun`, `deno`, `node-modules`, `npm`, `npm-shrinkwrap`, `pnpm`, `yarn` | `bun.lock`, `deno.lock`, checked-in `node_modules/**/package.json` metadata, `package-lock.json`, `npm-shrinkwrap.json`, `pnpm-lock.yaml`, Yarn Classic `package.json` + `yarn.lock` |
+| Node.js | `bun`, `deno`, `node-modules`, `npm`, `npm-shrinkwrap`, `pnpm`, `yarn-berry`, `yarn` | `bun.lock`, `deno.lock`, checked-in `node_modules/**/package.json` metadata, `package-lock.json`, `npm-shrinkwrap.json`, `pnpm-lock.yaml`, Yarn Berry `package.json` + `.yarnrc.yml` + `yarn.lock`, Yarn Classic `package.json` + `yarn.lock` |
 | PHP | `composer`, `composer-custom-vendor`, `composer-vendor` | `composer.json`, `composer.lock`, vendored Composer metadata in default and custom vendor directories |
 | Python | `conda_lock`, `dist-info`, `pdm`, `pip`, `pipenv`, `poetry`, `uv` | `conda-lock.yml`, checked-in `site-packages/*.dist-info/METADATA`, `pdm.lock`, `requirements.txt`, `Pipfile`, `Pipfile.lock`, `poetry.lock`, `uv.lock` |
 | Ruby | `bundle-vendor`, `bundler`, `gemfile` | `Gemfile`, `Gemfile.lock`, vendored gem specifications |

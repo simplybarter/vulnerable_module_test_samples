@@ -53,6 +53,9 @@
 /fixtures/node/npm-shrinkwrap/package-lock.json linguist-language=JavaScript package-manager=npm-shrinkwrap supported-language=javascript
 /fixtures/node/pnpm/package.json linguist-language=JSON package-manager=pnpm supported-language=javascript
 /fixtures/node/pnpm/pnpm-lock.yaml linguist-language=YAML package-manager=pnpm supported-language=javascript
+/fixtures/node/yarn-berry/package.json linguist-language=JSON package-manager=yarn-berry supported-language=javascript
+/fixtures/node/yarn-berry/.yarnrc.yml linguist-language=YAML package-manager=yarn-berry supported-language=javascript
+/fixtures/node/yarn-berry/yarn.lock package-manager=yarn-berry supported-language=javascript
 /fixtures/node/yarn/package.json linguist-language=JSON package-manager=yarn supported-language=javascript
 /fixtures/node/yarn/yarn.lock package-manager=yarn supported-language=javascript
 

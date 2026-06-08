@@ -1,0 +1,26 @@
+__metadata:
+  version: 8
+  cacheKey: 10c0
+
+"lodash@npm:^4.17.20":
+  version: "4.17.20"
+  resolution: "lodash@npm:4.17.20"
+  checksum: 10c0/lodash-placeholder
+  languageName: node
+  linkType: hard
+
+"minimist@npm:0.0.8":
+  version: "0.0.8"
+  resolution: "minimist@npm:0.0.8"
+  checksum: 10c0/minimist-placeholder
+  languageName: node
+  linkType: hard
+
+"mkdirp@npm:0.5.1":
+  version: "0.5.1"
+  resolution: "mkdirp@npm:0.5.1"
+  dependencies:
+    minimist: "npm:0.0.8"
+  checksum: 10c0/mkdirp-placeholder
+  languageName: node
+  linkType: hard
