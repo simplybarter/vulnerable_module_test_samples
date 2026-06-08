@@ -62,6 +62,7 @@
 /fixtures/ruby/bundle-vendor/Gemfile linguist-language=Ruby package-manager=bundle-vendor supported-language=ruby
 /fixtures/ruby/bundle-vendor/vendor/**/*.gemspec linguist-language=Ruby package-manager=bundle-vendor supported-language=ruby
 /fixtures/ruby/bundler/Gemfile.lock linguist-language=Ruby package-manager=bundler supported-language=ruby
+/fixtures/ruby/gemfile/Gemfile linguist-language=Ruby package-manager=bundler-gemfile supported-language=ruby
 
 # Rust
 /fixtures/rust/cargo/Cargo.toml linguist-language=Rust package-manager=cargo supported-language=rust

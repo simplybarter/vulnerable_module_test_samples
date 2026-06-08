@@ -1,0 +1,26 @@
+[
+  {
+    "name": "rack",
+    "version": "3.1.13",
+    "eco": "RubyGems",
+    "type": "manifest"
+  },
+  {
+    "name": "nokogiri",
+    "version": "1.18.8",
+    "eco": "RubyGems",
+    "type": "manifest"
+  },
+  {
+    "name": "rspec",
+    "version": "3.13.0",
+    "eco": "RubyGems",
+    "type": "manifest"
+  },
+  {
+    "name": "rails-assets-jquery",
+    "version": "3.7.1",
+    "eco": "RubyGems",
+    "type": "manifest"
+  }
+]
