@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/vulnerable-module-test-samples/templates/expected.schema.json",
+  "title": "expected.json fixture contract",
+  "description": "Schema for fixture expected.json files used in the vulnerable module test samples repository.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "version",
+      "eco",
+      "type"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Package identifier as it should be reported by the scanner."
+      },
+      "version": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Expected version string surfaced from the fixture."
+      },
+      "eco": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Repository ecosystem label, for example PyPI, Maven, NuGet, or crates.io."
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "manifest",
+          "locked",
+          "installed"
+        ],
+        "description": "Where the package is expected to be discovered."
+      }
+    }
+  }
+}

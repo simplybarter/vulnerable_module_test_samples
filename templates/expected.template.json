@@ -1,0 +1,20 @@
+[
+  {
+    "name": "package-name",
+    "version": "1.2.3",
+    "eco": "ecosystem-name",
+    "type": "manifest"
+  },
+  {
+    "name": "transitive-package-name",
+    "version": "4.5.6",
+    "eco": "ecosystem-name",
+    "type": "locked"
+  },
+  {
+    "name": "vendored-package-name",
+    "version": "7.8.9",
+    "eco": "ecosystem-name",
+    "type": "installed"
+  }
+]
