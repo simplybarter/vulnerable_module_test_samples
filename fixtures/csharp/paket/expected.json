@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Newtonsoft.Json",
+    "version": "12.0.3",
+    "eco": "NuGet",
+    "type": "manifest"
+  },
+  {
+    "name": "Microsoft.Extensions.Logging",
+    "version": "5.0.0",
+    "eco": "NuGet",
+    "type": "manifest"
+  },
+  {
+    "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+    "version": "5.0.0",
+    "eco": "NuGet",
+    "type": "locked"
+  },
+  {
+    "name": "Microsoft.Extensions.Logging",
+    "version": "5.0.0",
+    "eco": "NuGet",
+    "type": "locked"
+  },
+  {
+    "name": "Microsoft.Extensions.Logging.Abstractions",
+    "version": "5.0.0",
+    "eco": "NuGet",
+    "type": "locked"
+  },
+  {
+    "name": "Microsoft.Extensions.Options",
+    "version": "5.0.0",
+    "eco": "NuGet",
+    "type": "locked"
+  },
+  {
+    "name": "Microsoft.Extensions.Primitives",
+    "version": "5.0.0",
+    "eco": "NuGet",
+    "type": "locked"
+  },
+  {
+    "name": "Newtonsoft.Json",
+    "version": "12.0.3",
+    "eco": "NuGet",
+    "type": "locked"
+  }
+]

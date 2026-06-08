@@ -21,6 +21,10 @@
 /fixtures/csharp/lockfile/*.csproj linguist-language=C# package-manager=nuget-lockfile supported-language=csharp
 /fixtures/csharp/lockfile/packages.lock.json linguist-language=JSON package-manager=nuget-lockfile supported-language=csharp
 /fixtures/csharp/msbuild/*.csproj linguist-language=C# package-manager=msbuild supported-language=csharp
+/fixtures/csharp/paket/paket.dependencies package-manager=paket supported-language=csharp
+/fixtures/csharp/paket/paket.lock package-manager=paket supported-language=csharp
+/fixtures/csharp/paket/src/App/*.csproj linguist-language=C# package-manager=paket supported-language=csharp
+/fixtures/csharp/paket/src/App/paket.references package-manager=paket supported-language=csharp
 /fixtures/csharp/packages-folder/packages.config linguist-language=XML package-manager=packages.config supported-language=csharp
 /fixtures/csharp/packages-folder/nuget.config linguist-language=XML package-manager=nuget-packages-folder supported-language=csharp
 /fixtures/csharp/packages-folder/packages/**/*.nuspec linguist-language=XML package-manager=nuget-packages-folder supported-language=csharp
