@@ -72,4 +72,7 @@
 /fixtures/rust/cargo-vendor/vendor/**/Cargo.toml linguist-language=Rust package-manager=cargo-vendor supported-language=rust
 
 # Zig
+/fixtures/zig/zig-pkg/zig-pkg/** linguist-vendored=true
+/fixtures/zig/zig-pkg/build.zig.zon linguist-language=Zig package-manager=zig-pkg supported-language=zig
+/fixtures/zig/zig-pkg/zig-pkg/**/build.zig.zon linguist-language=Zig package-manager=zig-pkg supported-language=zig
 /fixtures/zig/zig/build.zig.zon linguist-language=Zig package-manager=zig supported-language=zig

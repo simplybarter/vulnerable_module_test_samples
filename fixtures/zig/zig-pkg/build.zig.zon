@@ -1,0 +1,15 @@
+.{
+    .name = "test",
+    .version = "0.1.0",
+    .dependencies = .{
+        .zap = .{
+            .url = "https://github.com/zigzap/zap/archive/refs/tags/v0.8.0.tar.gz",
+            .hash = "...",
+        },
+        .hzzp = .{
+            .version = "0.1.2",
+            .url = "https://github.com/karimnaaji/hzzp/archive/...tar.gz",
+            .hash = "...",
+        },
+    },
+}
