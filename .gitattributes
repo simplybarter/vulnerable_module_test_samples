@@ -22,6 +22,8 @@
 
 # Java
 /fixtures/java/gradle/*.gradle linguist-language=Java package-manager=gradle supported-language=java
+/fixtures/java/gradle-lockfile/*.gradle linguist-language=Java package-manager=gradle-lockfile supported-language=java
+/fixtures/java/gradle-lockfile/gradle.lockfile package-manager=gradle-lockfile supported-language=java
 /fixtures/java/maven/pom.xml linguist-language=Java package-manager=maven supported-language=java
 
 # Node.js
