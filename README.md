@@ -55,6 +55,7 @@ The repository is organized under `fixtures/`, first by language, then by packag
     |   `-- packages-folder/
     |-- go/
     |   |-- mod/
+    |   |-- workspace/
     |   `-- vendor/
     |-- java/
     |   |-- gradle/
@@ -136,7 +137,7 @@ The current fixture coverage under `fixtures/` is:
 | Language | Fixture Directories | Package Manager / Format Coverage |
 | --- | --- | --- |
 | C# | `legacy`, `lockfile`, `msbuild`, `packages-folder` | `packages.config`, `packages.lock.json`, SDK-style `.csproj`, extracted NuGet `.nuspec` metadata |
-| Go | `mod`, `vendor` | `go.mod`, `go.sum`, `vendor/modules.txt` |
+| Go | `mod`, `vendor`, `workspace` | `go.mod`, `go.sum`, `go.work`, workspace module `go.mod`/`go.sum`, `vendor/modules.txt` |
 | Java | `gradle`, `gradle-lockfile`, `maven`, `maven-repo` | `build.gradle`, `gradle.lockfile`, `pom.xml`, vendored Maven-repository `*.pom` metadata |
 | Node.js | `bun`, `deno`, `node-modules`, `npm`, `npm-shrinkwrap`, `pnpm`, `yarn` | `bun.lock`, `deno.lock`, checked-in `node_modules/**/package.json` metadata, `package-lock.json`, `npm-shrinkwrap.json`, `pnpm-lock.yaml`, Yarn Classic `package.json` + `yarn.lock` |
 | PHP | `composer`, `composer-custom-vendor`, `composer-vendor` | `composer.json`, `composer.lock`, vendored Composer metadata in default and custom vendor directories |

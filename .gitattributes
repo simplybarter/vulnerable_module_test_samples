@@ -30,6 +30,9 @@
 /fixtures/go/mod/go.sum linguist-language=Go package-manager=go-mod supported-language=go
 /fixtures/go/vendor/go.mod linguist-language=Go package-manager=go-vendor supported-language=go
 /fixtures/go/vendor/vendor/modules.txt package-manager=go-vendor supported-language=go
+/fixtures/go/workspace/go.work linguist-language=Go package-manager=go-work supported-language=go
+/fixtures/go/workspace/**/go.mod linguist-language=Go package-manager=go-work supported-language=go
+/fixtures/go/workspace/**/go.sum linguist-language=Go package-manager=go-work supported-language=go
 
 # Java
 /fixtures/java/gradle/*.gradle linguist-language=Java package-manager=gradle supported-language=java
