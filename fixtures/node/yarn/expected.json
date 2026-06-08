@@ -1,0 +1,26 @@
+[
+  {
+    "name": "minimist",
+    "version": "^0.0.8",
+    "eco": "node",
+    "type": "manifest"
+  },
+  {
+    "name": "mkdirp",
+    "version": "0.5.1",
+    "eco": "node",
+    "type": "manifest"
+  },
+  {
+    "name": "minimist",
+    "version": "0.0.8",
+    "eco": "node",
+    "type": "locked"
+  },
+  {
+    "name": "mkdirp",
+    "version": "0.5.1",
+    "eco": "node",
+    "type": "locked"
+  }
+]
